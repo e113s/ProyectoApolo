@@ -1,0 +1,29 @@
+<div class="page-header">
+	<h1>Todos los contactos</h1>
+</div>
+
+<div id="alertContainer"></div>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contact in contacts | filter:busca">
+				<td>{{contact.nombre}}</td>
+				<td>{{contact.email}}</td>
+				<td>{{contact.telefono}}</td>
+                <td>
+                    <a href="#contact/{{$index}}" class="btn btn-danger btn-sm">Ver perfil</a>
+                    <button class="btn btn-warning btn-sm" ng-click="delete($index)">Borrar</button>
+                </td>
+            </tr>
+        </tbody>
+</table>
+</div>

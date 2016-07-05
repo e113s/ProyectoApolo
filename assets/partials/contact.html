@@ -1,0 +1,59 @@
+<div class="page-header">
+    <h1><gravatar email="{{contact.email}}" size="50" class="img-circle"></gravatar> {{contact.nombre}}</h1>
+</div>
+
+
+<div class="form-horizontal">
+    <div class="row">
+       
+        <div class="col-xs-6">
+            
+            <div class="form-group">
+                <label for="nombre" class="col-sm-4 control-label">Nombre</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static" editable="contact.nombre"></p>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono" class="col-sm-4 control-label">Teléfono</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static" editable="contact.telefono" field-type="tel"></p>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="direccion" class="col-sm-4 control-label">Direcci&oacute;n</label>
+                <div class="col-sm-8">
+                    <p class="form-group-static" editable="contact.direccion" field-type="textarea"></p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="col-xs-6">
+           
+            <div class="form-group">
+                <label for="email" class="col-sm-4 control-label">Correo electr&oacute;nico</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static" editable="contact.email" field-type="email"></p>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="website" class="col-sm-4 control-label">Sitio web</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static" editable="contact.website" field-type="email"></p>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="notas" class="col-sm-4 control-label">Notas</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static" editable="contact.notas" field-type="textarea"></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
